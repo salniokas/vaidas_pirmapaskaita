@@ -1,24 +1,18 @@
+import java.util.Scanner;
+
 public class myfirstclass {
 
-    public static void main(String[] args){
-        System.out.println("Hello world");
-       int a =10;
-       myfirstclass  myfirstclass = new myfirstclass()
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("iveskite skaiciu");
 
-        myfirstclass.myNotStaticMethod(a);
+        int numb = sc.nextInt();
+        if (numb % 2 == 0) {
+            System.out.println(numb + "yra lyginis");
+        } else {
+            System.out.println(numb + "nelyginis");
+        }
 
-       myStaticMethod();
-       float b=4.6f;
-       double c=2.4;
-       boolean d= true;
-       char e= 'A';
-       String f ="this is string!!!";
 
-    }
-    private void myNotStaticMethod(int numb){
-        System.out.println("jusu skaicius"+numb);
-    }
-    private static void myStaticMethod(){
-        System.out.println("cia yra statinis metodas");
     }
 }
